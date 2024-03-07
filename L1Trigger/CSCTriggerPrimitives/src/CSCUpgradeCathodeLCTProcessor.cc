@@ -87,7 +87,6 @@ bool CSCUpgradeCathodeLCTProcessor::preTrigger(const int start_bx, int& first_bx
       markBusyZone(bx_time);
 
        if (pre_trig) {
-        std::cout<<"\npretrig value: "<<pre_trig<<std::endl;
         first_bx = bx_time;  // bx at time of pretrigger
         return true;
       }

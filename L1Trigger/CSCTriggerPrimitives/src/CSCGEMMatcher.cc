@@ -253,7 +253,7 @@ int CSCGEMMatcher::matchedClusterDistES(const CSCCLCTDigi& clct,
                                  : lookupTableME21ILT_->GEM_align_corr_es_ME21_negative_endcap(chamber_, cl.roll1());
   }
 
-  std::cout << "Correction = " << alignCorrection << std::endl;
+  // std::cout << "Correction = " << alignCorrection << std::endl;
   int eighthStripDiff = cl_es + alignCorrection - clct.getKeyStrip(8);
 
   if (matchCLCTpropagation_ and !ForceTotal) {  // modification of DeltaStrip by CLCT slope
